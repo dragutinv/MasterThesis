@@ -15,7 +15,7 @@
 
 %omitting any of these makes the thesis compile without the omitted
 %chapter - good for editing single chapters.
-\includeonly{header,intro,background,appendix}
+\includeonly{Header,Introduction,"Problem definition", "State of the art", "Methodology", "Results", "Conclusions",Appendix}
 
 \begin{document}
 \newpage
@@ -30,7 +30,7 @@
 
 %DEFINES TITLE PAGE, and contains abstract, acknowledgements, etc.
 
-\include{header}
+\include{Header}
 
 \newpage
 
@@ -44,10 +44,14 @@
 %\singlespacing
 %\doublespacing
 \onehalfspacing
-\input{intro.tex}
-\input{background.tex}
+\input{Introduction.tex}
+\input{"Problem definition.tex"}
+\input{"State of the art.tex"}
+\input{"Methodology.tex"}
+\input{"Results.tex"}
+\input{"Conclusions.tex"}
 \appendix
-\input{appendix.tex}
+\input{Appendix.tex}
 
 %   this is for BibTeX.  remove if you plan to write the references in the document
 \bibliographystyle{plain}
