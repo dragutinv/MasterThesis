@@ -1,2 +1,15 @@
 \chapter{Introduction} \label{chap:intro}
 
+
+Consider ball tracking in tennis, which is still manually done or skipped in cases of insufficient budget. The main advantage of ball tracking is that it provides key information necessary for tactics analysis, training improvement, personal progress tracking. The goal of every tennis player is to advance and at the beginning to compare personal performances with top players.  The system that can support this needs to have 'tennis' knowledge, and one of the best way to gain this knowledge is through video analysis.  \\
+
+Let's consider, tennis trainer who wants to improve his player game, and compare it with more advanced players. Significant technique that video analysis can provide is to compare positions and shots of novice player with more advanced players. The first issue in this case is lack of available advanced video statistics related to professional players.  Second significant problem is that to provide this statistics for own player, its is necessary to setup expensive environment with multiple high speed cameras. \\
+
+The lack of advanced video statistics can be solved using the following method: instead of using multi camera environment,  it is possible to use single camera to extract key information: players position and 3D ball trajectory. The solution will be explained further in this document. The same solution can be applied on archived tennis video matches, in order to extract advanced statistics about professional players.\\
+
+
+This paper will present solution for automatic annotation of broadcast videos. The main contribution of this paper are:
+\begin{itemize}
+	\item Automatic tennis players recognition and tracking based on initial labeling (Section ?) using monocular camera. 
+	\item Automatic generation of tennis ball 3D trajectory and velocity (Section ?) using monocular camera. We prove that extracted 3D ball trajectory has more than 90\% accuracy comparing with manually extracted ground truth for Grand Slam matches.   
+\end{itemize}
