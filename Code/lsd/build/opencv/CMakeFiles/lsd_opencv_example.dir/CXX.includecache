@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/lsd.h
+
+/Users/dragutinvujovic/Documents/MasterThesis & PhD/MasterThesis/Code/lsd/opencv/lsd_opencv_example.cpp
+highgui.h
+-
+cv.h
+-
+lsd.h
+-
+iostream
+-
+

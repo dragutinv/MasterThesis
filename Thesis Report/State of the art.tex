@@ -1,2 +1,63 @@
 \chapter{State of the art} \label{chap:State_of_the_art}
 
+In \cite{Figueroa:2006dq} the focus is on players tracking. The blobs, after background subtraction,  are grouped  in a connected graph. Graph nodes contain spatial information (size, color, shape) about blobs, and edges contain distance between blobs, movement of the player in consecutive frames. The player trajectory is found using minimal path searching. \\
+
+The \cite{Lai:2011gf} proposed a new method for generation of background scenes, which enables to remove foreground objects without human assistance. The background scene is created using shots of completely visible playing field. Difference between generated background scene and current frame enables to segment foreign objects. The segmentation of players is enhances using automatic alpha matting technique.\\
+
+The \cite{Niu:2012dz} uses Kalman filter and Minimum Spanning Tree based clustering to improve performances of field lines detection. The tracking objects are represented in real-world frame, after computing homography between image and world coordinate system. 
+
+ 
+
+\begin{table}[ht]
+	\centering
+	\begin{adjustbox}{width=1\textwidth, angle=0}
+	\small
+	\begin{tabular}{  l l l l l l   }
+		\hline
+		\textbf{Ref} & \textbf{Task} & \textbf{Image Stream} & \textbf{Feature extracted} & \textbf{Method} & \textbf{Comp. costs} \\ \hline
+		\cite{Chen:2007jma} & Volleyball ball tracking & 352x240 MPEG-1 & Nearest neighbor to the estimation in the next frame &  &  \\
+		
+		\cite{Figueroa:2006dq} & Football players tracking & 720x480 MPEG-2  & Blobs from background substraction &  Graph of components  &  \\
+		
+		\cite{Lai:2011gf} & Automatic annotation  & 720x480 Broadcast videos   & Score box, Ball hit sound  & Kalman filter & \\
+		
+		\cite{Niu:2012dz} & Football's tactic pattern recognition  &  704x576 MPEG-2  & Field lines, Ball  & Global Motion Estimation, Kalman Filter, MST Clustering   & \\
+		
+		\cite{Fang:2014uz} & Player tracking & & & \\
+		
+		\hline
+	\end{tabular}
+	\end{adjustbox}
+	\caption{A review of works on ball detection}
+	\label{table:ReviewBallDetection}
+\end{table}
+
+\section{Ball tracking}
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{  l l l l l  }
+		\hline
+		\textbf{Ref} & \textbf{Focus} & \textbf{Image Stream} & \textbf{Method} & \textbf{Comp. costs} \\ \hline
+		1 & 2 & 3 & 4 & 5 \\
+		1 & 2 & 3 & 4 & 5 \\
+		\hline
+	\end{tabular}
+	\caption{A review of works on ball tracking}
+	\label{table:ReviewBallTracking}
+\end{table}
+
+\section{Player tracking}
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{  l l l l l  }
+		\hline
+		\textbf{Ref} & \textbf{Focus} & \textbf{Image Stream} & \textbf{Method} & \textbf{Comp. costs} \\ \hline
+		1 & 2 & 3 & 4 & 5 \\
+		1 & 2 & 3 & 4 & 5 \\
+		\hline
+	\end{tabular}
+	\caption{A review of works on players detection}
+	\label{table:ReviewPlayerDetection}
+\end{table}

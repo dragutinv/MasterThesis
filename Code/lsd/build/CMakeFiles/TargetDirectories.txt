@@ -1,0 +1,4 @@
+/Users/dragutinvujovic/Documents/MasterThesis & PhD/MasterThesis/Code/lsd/build/matlab/CMakeFiles/mex_lsd.dir
+/Users/dragutinvujovic/Documents/MasterThesis & PhD/MasterThesis/Code/lsd/build/opencv/CMakeFiles/lsd_opencv_example.dir
+/Users/dragutinvujovic/Documents/MasterThesis & PhD/MasterThesis/Code/lsd/build/matlab/CMakeFiles/mex_lsd_image.dir
+/Users/dragutinvujovic/Documents/MasterThesis & PhD/MasterThesis/Code/lsd/build/CMakeFiles/lsd.dir

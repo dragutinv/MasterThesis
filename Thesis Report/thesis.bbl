@@ -1,8 +1,34 @@
 \begin{thebibliography}{1}
 
-\bibitem{Pokorski:1998hr}
-Witold Pokorski and Graham~G. Ross.
-\newblock Flat directions, string compactification and three generation models.
-\newblock 1998.
+\bibitem{Chen:2007jma}
+Hua-Tsung Chen, Hsuan-Shen Chen, and Suh-Yin Lee.
+\newblock {Physics-Based Ball Tracking in Volleyball Videos with its
+  Applications to Set Type Recognition and Action Detection}.
+\newblock {\em 2007 IEEE International Conference on Acoustics, Speech and
+  Signal Processing - ICASSP '07}, 1:I--1097--I--1100, 2007.
+
+\bibitem{Fang:2014uz}
+M~Y Fang, C~K Chang, N~C Yang, and C~M Kuo.
+\newblock {Robust player tracking for broadcast tennis videos with adaptive
+  Kalman filtering}.
+\newblock {\em source: Journal of {\ldots}}, 2014.
+
+\bibitem{Figueroa:2006dq}
+P~J Figueroa, N~J Leite, and RML Barros.
+\newblock {Tracking soccer players aiming their kinematical motion analysis}.
+\newblock {\em Computer Vision and Image Understanding}, 101(2):122--135, 2006.
+
+\bibitem{Lai:2011gf}
+Jui-Hsin Lai, Chieh-Li Chen, Chieh-Chi Kao, and Shao-Yi Chien.
+\newblock {Tennis Video 2.0: A new presentation of sports videos with content
+  separation and rendering}.
+\newblock {\em Journal of Visual Communication and Image Representation},
+  22(3):271--283, April 2011.
+
+\bibitem{Niu:2012dz}
+Zhenxing Niu, Xinbo Gao, and Qi~Tian.
+\newblock {Tactic analysis based on real-world ball trajectory in soccer
+  video}.
+\newblock {\em Pattern Recognition}, 45(5):1937--1947, May 2012.
 
 \end{thebibliography}
