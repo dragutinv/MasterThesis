@@ -1,4 +1,9 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{AlemanFlores:2014ey}
+M~Alem{\'a}n-Flores, L~Alvarez, L~Gomez, P~Henriquez, and L~Mazorra.
+\newblock {Camera calibration in sport event scenarios}.
+\newblock {\em Pattern Recognition}, 47(1):89--95, January 2014.
 
 \bibitem{Chen:2007jma}
 Hua-Tsung Chen, Hsuan-Shen Chen, and Suh-Yin Lee.
@@ -7,16 +12,42 @@ Hua-Tsung Chen, Hsuan-Shen Chen, and Suh-Yin Lee.
 \newblock {\em 2007 IEEE International Conference on Acoustics, Speech and
   Signal Processing - ICASSP '07}, 1:I--1097--I--1100, 2007.
 
+\bibitem{Chen:2012cc}
+Hua-Tsung Chen, Chien-Li Chou, Tsung-Sheng Fu, Suh-Yin Lee, and Bao-Shuh~P Lin.
+\newblock {Recognizing tactic patterns in broadcast basketball video using
+  player trajectory}.
+\newblock {\em Journal of Visual Communication and Image Representation},
+  23(6):932--947, August 2012.
+
+\bibitem{Chen:2011is}
+Hua-Tsung Chen, Chien-Li Chou, Wen-Jin Tsai, and Suh-Yin Lee.
+\newblock {3D ball trajectory reconstruction from single-camera sports video
+  for free viewpoint virtual replay}.
+\newblock In {\em Visual Communications and Image Processing (VCIP), 2011
+  IEEE}, pages 1--4. IEEE, 2011.
+
 \bibitem{Fang:2014uz}
 M~Y Fang, C~K Chang, N~C Yang, and C~M Kuo.
 \newblock {Robust player tracking for broadcast tennis videos with adaptive
   Kalman filtering}.
 \newblock {\em source: Journal of {\ldots}}, 2014.
 
+\bibitem{Farin:2004ix}
+Dirk Farin, Susanne Krabbe, Peter H~N de~With, and Wolfgang Effelsberg.
+\newblock {Robust camera calibration for sport videos using court models.}
+\newblock {\em Storage and Retrieval Methods and Applications for Multimedia},
+  5307:80--91, 2004.
+
 \bibitem{Figueroa:2006dq}
 P~J Figueroa, N~J Leite, and RML Barros.
 \newblock {Tracking soccer players aiming their kinematical motion analysis}.
 \newblock {\em Computer Vision and Image Understanding}, 101(2):122--135, 2006.
+
+\bibitem{Hu:2011fu}
+Min-Chun Hu, Ming-Hsiu Chang, Ja-Ling Wu, and Lin Chi.
+\newblock {Robust Camera Calibration and Player Tracking in Broadcast
+  Basketball Video}.
+\newblock {\em IEEE Transactions on Multimedia}, 13(2):266--279, March 2011.
 
 \bibitem{Lai:2011gf}
 Jui-Hsin Lai, Chieh-Li Chen, Chieh-Chi Kao, and Shao-Yi Chien.
@@ -30,5 +61,33 @@ Zhenxing Niu, Xinbo Gao, and Qi~Tian.
 \newblock {Tactic analysis based on real-world ball trajectory in soccer
   video}.
 \newblock {\em Pattern Recognition}, 45(5):1937--1947, May 2012.
+
+\bibitem{Pallavi:2008em}
+V~Pallavi, J~Mukherjee, A~K Majumdar, and S~Sural.
+\newblock {Ball detection from broadcast soccer videos using static and dynamic
+  features}.
+\newblock {\em Journal of Visual Communication and Image Representation},
+  19(7):426--436, 2008.
+
+\bibitem{Yan:2015ca}
+Fei Yan, William Christmas, and Josef Kittler.
+\newblock {Ball Tracking for Tennis Video Annotation}.
+\newblock In {\em Computer Vision in Sports}, pages 25--45. Springer
+  International Publishing, Cham, January 2015.
+
+\bibitem{Yan:2014hk}
+Fei Yan, Josef Kittler, David Windridge, William Christmas, Krystian
+  Mikolajczyk, Stephen Cox, and Qiang Huang.
+\newblock {Automatic annotation of tennis games: An integration of audio,
+  vision, and learning}.
+\newblock {\em IMAVIS}, 32(11):896--903, November 2014.
+
+\bibitem{Yu:2009ch}
+Xinguo Yu, Nianjuan Jiang, Loong-Fah Cheong, Hon~Wai Leong, and Xin Yan.
+\newblock {Automatic camera calibration of broadcast tennis video with
+  applications to 3D virtual content insertion and ball detection and
+  tracking}.
+\newblock {\em Computer Vision and Image Understanding}, 113(5):643--652, May
+  2009.
 
 \end{thebibliography}

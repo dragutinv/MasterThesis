@@ -2,13 +2,11 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {chapter}{\numberline {2}Problem definition}{3}
 \contentsline {chapter}{\numberline {3}State of the art}{4}
-\contentsline {section}{\numberline {3.1}Ball tracking}{5}
-\contentsline {section}{\numberline {3.2}Player tracking}{5}
-\contentsline {chapter}{\numberline {4}Methodology}{6}
-\contentsline {section}{\numberline {4.1}Methods}{6}
-\contentsline {section}{\numberline {4.2}Data Collection Methods}{6}
-\contentsline {section}{\numberline {4.3}Analysis}{6}
-\contentsline {chapter}{\numberline {5}Results}{7}
-\contentsline {chapter}{\numberline {6}Conclusions}{8}
-\contentsline {chapter}{\numberline {A}The first appendix}{9}
-\contentsline {chapter}{\numberline {Bibliography\hspace {-96pt}}}{10}
+\contentsline {chapter}{\numberline {4}Methodology}{7}
+\contentsline {section}{\numberline {4.1}Methods}{7}
+\contentsline {section}{\numberline {4.2}Data Collection Methods}{7}
+\contentsline {section}{\numberline {4.3}Analysis}{7}
+\contentsline {chapter}{\numberline {5}Results}{8}
+\contentsline {chapter}{\numberline {6}Conclusions}{9}
+\contentsline {chapter}{\numberline {A}The first appendix}{10}
+\contentsline {chapter}{\numberline {Bibliography\hspace {-96pt}}}{12}

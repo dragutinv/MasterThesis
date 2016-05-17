@@ -4,60 +4,65 @@ In \cite{Figueroa:2006dq} the focus is on players tracking. The blobs, after bac
 
 The \cite{Lai:2011gf} proposed a new method for generation of background scenes, which enables to remove foreground objects without human assistance. The background scene is created using shots of completely visible playing field. Difference between generated background scene and current frame enables to segment foreign objects. The segmentation of players is enhances using automatic alpha matting technique.\\
 
-The \cite{Niu:2012dz} uses Kalman filter and Minimum Spanning Tree based clustering to improve performances of field lines detection. The tracking objects are represented in real-world frame, after computing homography between image and world coordinate system. 
+The \cite{Niu:2012dz} uses Kalman filter and Minimum Spanning Tree based clustering to improve performances of field lines detection. The tracking objects are represented in real-world frame, after computing homography between image and world coordinate system. \\
 
- 
+In \cite{Fang:2014uz} Kalman filter parameters are adapted to improve tracking of the player further from the camera, where the tracking is corrupted by noise. The uncertainties of the state model and the measurement model are depended on the area of the detected player. When the size of the player is smaller then the predicted size, Kalman filter trusts more prediction then the measurement.\\
+
+The \cite{Farin:2004ix} presented automatic calibration algorithm for court sports. The court lines are found by Hough transform, and ordered on horizontal and vertical. The crossing between two horizontal and two vertical lines are used to find the homography between input court model and reference model. The homography is measured by finding pixel matching between input court model, and projected reference model.\\
+
+The \cite{Hu:2011fu} proposed few improvements for homography calculation and players tracking in basketball videos. The preprocessing step eliminates non-court shots, and generate field mask based on dominant color. The correct homography is selected based on fitting score from different candidates. The players are tracking using adaptive mean shift algorithm (CamShift). \\
+
+In \cite{Chen:2007jma} three major steps are performed. The first is to determine homography, using the field white lines and additionally eliminating outliers that don't fit to the court model. The second step is to construct the background model of the court, using dominant colors and Gaussian mixture model. The last step is to classify foreground objects in two teams and to perform their tracking using Kalman filter.\\
+
+The \cite{Yan:2015ca} did ball data association by generating tracklets. The tracklet is the structure that can originate from the ball or the clutter. The tracklets are connected in directed graph, where edge weight between two nodees are calculted as a compatibility of two tracklets. The ball trajectory is obtained by calculating shortest path between nodes, and then smoothed using Kalman filter.\\
+
+The \cite{Pallavi:2008em} used Circular Hough transform to detect ball. Additionally all shots are classified as close, medium or long based on dominant color. Depending on the shot type, circular objects within certain radius are kept as ball candidates. The ball candidates from consecutive frames are connected in acyclic graph, and longest path in graph is considered as the ball trajectory.\\
+
+
+The \cite{Yu:2009ch} improved precision of camera calibration by grouping frames with the same lookats and the focal length. This method decrease the effect of image noises and neglect frames that are not in any group. \\
+
+The \cite{Yan:2014hk} explored audio clues to detect key tennis events: serve, player hitting the ball, bounce, ball hitting the net. The audio Mel-frequency cepstral coefficients are classified using maximum likelihood. The audio clues are combined with the ball tracking (\cite{Yan:2015ca}) in order to perform automatic annotation.
+
+
 
 \begin{table}[ht]
 	\centering
 	\begin{adjustbox}{width=1\textwidth, angle=0}
 	\small
-	\begin{tabular}{  l l l l l l   }
+	\begin{tabular}{  l l l l l  }
 		\hline
-		\textbf{Ref} & \textbf{Task} & \textbf{Image Stream} & \textbf{Feature extracted} & \textbf{Method} & \textbf{Comp. costs} \\ \hline
-		\cite{Chen:2007jma} & Volleyball ball tracking & 352x240 MPEG-1 & Nearest neighbor to the estimation in the next frame &  &  \\
+		\textbf{Ref} & \textbf{Task} & \textbf{Image Stream} & \textbf{Feature extracted} & \textbf{Method} \\ \hline
+		\cite{Chen:2007jma} & Volleyball ball tracking & 352x240 MPEG-1 & Nearest neighbor to the estimation in the next frame \\
 		
-		\cite{Figueroa:2006dq} & Football players tracking & 720x480 MPEG-2  & Blobs from background substraction &  Graph of components  &  \\
+		\cite{Figueroa:2006dq} & Football players tracking & 720x480 MPEG-2  & Blobs from background subtraction &  Graph of components  \\
 		
-		\cite{Lai:2011gf} & Automatic annotation  & 720x480 Broadcast videos   & Score box, Ball hit sound  & Kalman filter & \\
+		\cite{Lai:2011gf} & Automatic annotation  & 720x480 Broadcast videos   & Score box, Ball hit sound  & Kalman filter \\
 		
-		\cite{Niu:2012dz} & Football's tactic pattern recognition  &  704x576 MPEG-2  & Field lines, Ball  & Global Motion Estimation, Kalman Filter, MST Clustering   & \\
+		\cite{Niu:2012dz} & Football's tactic pattern recognition  &  704x576 MPEG-2  & Field lines, Ball  & Global Motion Estimation, Kalman Filter, MST Clustering \\
 		
-		\cite{Fang:2014uz} & Player tracking & & & \\
+		\cite{Fang:2014uz} & Player tracking & 720x480 MPEG-2   & Blobs from background subtraction & Adaptive Kalman Filter \\
 		
+		\cite{Farin:2004ix} & Automatic camera calibration & 720x480 Broadcast videos  & Field lines & Hough transform \\
+		
+		\cite{Hu:2011fu} & Camera calibration and basketball players tracking &  720x480 MPEG-2  & Field lines, Dominant field color  & RANSAC,  CamShift tracking \\
+		
+		\cite{Chen:2012cc} &  Basketball players tracking & 640x352 Broadcast videos & Field lines, Blobs from background subtraction  & Hough transform, Kalman filter, K-Means segmentation \\
+		
+		\cite{Yan:2015ca} & Tennis ball tracking & Broadcast videos & Blobs from background subtraction  & Kalman filter  \\
+		
+		\cite{AlemanFlores:2014ey} & Camera calibration & 1920x1080 Images & Field lines & Hough transform,  \\
+		
+		\cite{Pallavi:2008em} & Ball trajectory & Broadcast videos  & Dominant color, Blobs from background subtraction & Sobel edge detector, Circular Hough transform \\
+		
+		\cite{Yu:2009ch} & Camera calibration, ball detection and tracking & 704x576 MPEG-2 & Field lines & Hough like search for homography transform,  \\
+		
+		\cite{Yan:2014hk} & Automatic annotation & Broadcast videos & Audio (Mel-frequency cepstral coefficients)  & Maximum likelihood  \\
+		
+		\cite{Chen:2011is} & Valleyball 3D ball trajectory & 352x240 MPEG-1 & Field lines, Blobs from background subtraction  & Hough transform \\
+				
 		\hline
 	\end{tabular}
 	\end{adjustbox}
-	\caption{A review of works on ball detection}
+	\caption{A review of works related to camera calibration, ball and player tracking  from single camera}
 	\label{table:ReviewBallDetection}
-\end{table}
-
-\section{Ball tracking}
-
-\begin{table}[ht]
-	\centering
-	\begin{tabular}{  l l l l l  }
-		\hline
-		\textbf{Ref} & \textbf{Focus} & \textbf{Image Stream} & \textbf{Method} & \textbf{Comp. costs} \\ \hline
-		1 & 2 & 3 & 4 & 5 \\
-		1 & 2 & 3 & 4 & 5 \\
-		\hline
-	\end{tabular}
-	\caption{A review of works on ball tracking}
-	\label{table:ReviewBallTracking}
-\end{table}
-
-\section{Player tracking}
-
-\begin{table}[ht]
-	\centering
-	\begin{tabular}{  l l l l l  }
-		\hline
-		\textbf{Ref} & \textbf{Focus} & \textbf{Image Stream} & \textbf{Method} & \textbf{Comp. costs} \\ \hline
-		1 & 2 & 3 & 4 & 5 \\
-		1 & 2 & 3 & 4 & 5 \\
-		\hline
-	\end{tabular}
-	\caption{A review of works on players detection}
-	\label{table:ReviewPlayerDetection}
 \end{table}
